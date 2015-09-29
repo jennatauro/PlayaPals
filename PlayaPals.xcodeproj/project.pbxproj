@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DFDE8FC1BBAE0F40068E4E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFDE8FB1BBAE0F40068E4E6 /* main.m */; };
+		6DFDE8FF1BBAE0F40068E4E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFDE8FE1BBAE0F40068E4E6 /* AppDelegate.m */; };
+		6DFDE9021BBAE0F40068E4E6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFDE9011BBAE0F40068E4E6 /* FirstViewController.m */; };
+		6DFDE9051BBAE0F40068E4E6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFDE9041BBAE0F40068E4E6 /* SecondViewController.m */; };
+		6DFDE9081BBAE0F40068E4E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFDE9061BBAE0F40068E4E6 /* Main.storyboard */; };
+		6DFDE90A1BBAE0F40068E4E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFDE9091BBAE0F40068E4E6 /* Images.xcassets */; };
+		6DFDE90D1BBAE0F40068E4E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFDE90B1BBAE0F40068E4E6 /* LaunchScreen.xib */; };
+		6DFDE9191BBAE0F40068E4E6 /* PlayaPalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFDE9181BBAE0F40068E4E6 /* PlayaPalsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DFDE9131BBAE0F40068E4E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DFDE8EE1BBAE0F40068E4E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DFDE8F51BBAE0F40068E4E6;
+			remoteInfo = PlayaPals;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6DFDE8F61BBAE0F40068E4E6 /* PlayaPals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayaPals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DFDE8FA1BBAE0F40068E4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DFDE8FB1BBAE0F40068E4E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DFDE8FD1BBAE0F40068E4E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6DFDE8FE1BBAE0F40068E4E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6DFDE9001BBAE0F40068E4E6 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		6DFDE9011BBAE0F40068E4E6 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		6DFDE9031BBAE0F40068E4E6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		6DFDE9041BBAE0F40068E4E6 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		6DFDE9071BBAE0F40068E4E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DFDE9091BBAE0F40068E4E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6DFDE90C1BBAE0F40068E4E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6DFDE9121BBAE0F40068E4E6 /* PlayaPalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayaPalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DFDE9171BBAE0F40068E4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DFDE9181BBAE0F40068E4E6 /* PlayaPalsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayaPalsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DFDE8F31BBAE0F40068E4E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFDE90F1BBAE0F40068E4E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DFDE8ED1BBAE0F40068E4E6 = {
+			isa = PBXGroup;
+			children = (
+				6DFDE8F81BBAE0F40068E4E6 /* PlayaPals */,
+				6DFDE9151BBAE0F40068E4E6 /* PlayaPalsTests */,
+				6DFDE8F71BBAE0F40068E4E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DFDE8F71BBAE0F40068E4E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DFDE8F61BBAE0F40068E4E6 /* PlayaPals.app */,
+				6DFDE9121BBAE0F40068E4E6 /* PlayaPalsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DFDE8F81BBAE0F40068E4E6 /* PlayaPals */ = {
+			isa = PBXGroup;
+			children = (
+				6DFDE8FD1BBAE0F40068E4E6 /* AppDelegate.h */,
+				6DFDE8FE1BBAE0F40068E4E6 /* AppDelegate.m */,
+				6DFDE9001BBAE0F40068E4E6 /* FirstViewController.h */,
+				6DFDE9011BBAE0F40068E4E6 /* FirstViewController.m */,
+				6DFDE9031BBAE0F40068E4E6 /* SecondViewController.h */,
+				6DFDE9041BBAE0F40068E4E6 /* SecondViewController.m */,
+				6DFDE9061BBAE0F40068E4E6 /* Main.storyboard */,
+				6DFDE9091BBAE0F40068E4E6 /* Images.xcassets */,
+				6DFDE90B1BBAE0F40068E4E6 /* LaunchScreen.xib */,
+				6DFDE8F91BBAE0F40068E4E6 /* Supporting Files */,
+			);
+			path = PlayaPals;
+			sourceTree = "<group>";
+		};
+		6DFDE8F91BBAE0F40068E4E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DFDE8FA1BBAE0F40068E4E6 /* Info.plist */,
+				6DFDE8FB1BBAE0F40068E4E6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DFDE9151BBAE0F40068E4E6 /* PlayaPalsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DFDE9181BBAE0F40068E4E6 /* PlayaPalsTests.m */,
+				6DFDE9161BBAE0F40068E4E6 /* Supporting Files */,
+			);
+			path = PlayaPalsTests;
+			sourceTree = "<group>";
+		};
+		6DFDE9161BBAE0F40068E4E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DFDE9171BBAE0F40068E4E6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DFDE8F51BBAE0F40068E4E6 /* PlayaPals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DFDE91C1BBAE0F40068E4E6 /* Build configuration list for PBXNativeTarget "PlayaPals" */;
+			buildPhases = (
+				6DFDE8F21BBAE0F40068E4E6 /* Sources */,
+				6DFDE8F31BBAE0F40068E4E6 /* Frameworks */,
+				6DFDE8F41BBAE0F40068E4E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayaPals;
+			productName = PlayaPals;
+			productReference = 6DFDE8F61BBAE0F40068E4E6 /* PlayaPals.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DFDE9111BBAE0F40068E4E6 /* PlayaPalsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DFDE91F1BBAE0F40068E4E6 /* Build configuration list for PBXNativeTarget "PlayaPalsTests" */;
+			buildPhases = (
+				6DFDE90E1BBAE0F40068E4E6 /* Sources */,
+				6DFDE90F1BBAE0F40068E4E6 /* Frameworks */,
+				6DFDE9101BBAE0F40068E4E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DFDE9141BBAE0F40068E4E6 /* PBXTargetDependency */,
+			);
+			name = PlayaPalsTests;
+			productName = PlayaPalsTests;
+			productReference = 6DFDE9121BBAE0F40068E4E6 /* PlayaPalsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DFDE8EE1BBAE0F40068E4E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = JennaTauro;
+				TargetAttributes = {
+					6DFDE8F51BBAE0F40068E4E6 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					6DFDE9111BBAE0F40068E4E6 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 6DFDE8F51BBAE0F40068E4E6;
+					};
+				};
+			};
+			buildConfigurationList = 6DFDE8F11BBAE0F40068E4E6 /* Build configuration list for PBXProject "PlayaPals" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DFDE8ED1BBAE0F40068E4E6;
+			productRefGroup = 6DFDE8F71BBAE0F40068E4E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DFDE8F51BBAE0F40068E4E6 /* PlayaPals */,
+				6DFDE9111BBAE0F40068E4E6 /* PlayaPalsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DFDE8F41BBAE0F40068E4E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFDE9081BBAE0F40068E4E6 /* Main.storyboard in Resources */,
+				6DFDE90D1BBAE0F40068E4E6 /* LaunchScreen.xib in Resources */,
+				6DFDE90A1BBAE0F40068E4E6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFDE9101BBAE0F40068E4E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DFDE8F21BBAE0F40068E4E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFDE9051BBAE0F40068E4E6 /* SecondViewController.m in Sources */,
+				6DFDE8FF1BBAE0F40068E4E6 /* AppDelegate.m in Sources */,
+				6DFDE9021BBAE0F40068E4E6 /* FirstViewController.m in Sources */,
+				6DFDE8FC1BBAE0F40068E4E6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFDE90E1BBAE0F40068E4E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFDE9191BBAE0F40068E4E6 /* PlayaPalsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DFDE9141BBAE0F40068E4E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DFDE8F51BBAE0F40068E4E6 /* PlayaPals */;
+			targetProxy = 6DFDE9131BBAE0F40068E4E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DFDE9061BBAE0F40068E4E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DFDE9071BBAE0F40068E4E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DFDE90B1BBAE0F40068E4E6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DFDE90C1BBAE0F40068E4E6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DFDE91A1BBAE0F40068E4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6DFDE91B1BBAE0F40068E4E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DFDE91D1BBAE0F40068E4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PlayaPals/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6DFDE91E1BBAE0F40068E4E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PlayaPals/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6DFDE9201BBAE0F40068E4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PlayaPalsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayaPals.app/PlayaPals";
+			};
+			name = Debug;
+		};
+		6DFDE9211BBAE0F40068E4E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PlayaPalsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayaPals.app/PlayaPals";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DFDE8F11BBAE0F40068E4E6 /* Build configuration list for PBXProject "PlayaPals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFDE91A1BBAE0F40068E4E6 /* Debug */,
+				6DFDE91B1BBAE0F40068E4E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DFDE91C1BBAE0F40068E4E6 /* Build configuration list for PBXNativeTarget "PlayaPals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFDE91D1BBAE0F40068E4E6 /* Debug */,
+				6DFDE91E1BBAE0F40068E4E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6DFDE91F1BBAE0F40068E4E6 /* Build configuration list for PBXNativeTarget "PlayaPalsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFDE9201BBAE0F40068E4E6 /* Debug */,
+				6DFDE9211BBAE0F40068E4E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DFDE8EE1BBAE0F40068E4E6 /* Project object */;
+}
