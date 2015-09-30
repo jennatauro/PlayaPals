@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D1769A11BBC1CE800831491 /* EventsManagerDelegate.h in Resources */ = {isa = PBXBuildFile; fileRef = 6D1769A01BBC1CE800831491 /* EventsManagerDelegate.h */; settings = {ASSET_TAGS = (); }; };
+		6D1769A51BBC1E6B00831491 /* EventsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1769A41BBC1E6B00831491 /* EventsManager.m */; settings = {ASSET_TAGS = (); }; };
+		6D1769A91BBC1F7D00831491 /* EventBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1769A81BBC1F7D00831491 /* EventBuilder.m */; settings = {ASSET_TAGS = (); }; };
+		6D1769AB1BBC238F00831491 /* EventsCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1769AA1BBC238F00831491 /* EventsCommunicator.m */; settings = {ASSET_TAGS = (); }; };
+		6D1769AE1BBC256E00831491 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1769AD1BBC256E00831491 /* Event.m */; settings = {ASSET_TAGS = (); }; };
+		6D1769B11BBC283A00831491 /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1769B01BBC283A00831491 /* EventDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6D1769B41BBC292900831491 /* EventDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1769B31BBC292900831491 /* EventDetailCell.m */; settings = {ASSET_TAGS = (); }; };
 		6DFDE8FC1BBAE0F40068E4E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFDE8FB1BBAE0F40068E4E6 /* main.m */; };
 		6DFDE8FF1BBAE0F40068E4E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFDE8FE1BBAE0F40068E4E6 /* AppDelegate.m */; };
 		6DFDE9021BBAE0F40068E4E6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFDE9011BBAE0F40068E4E6 /* FirstViewController.m */; };
@@ -28,6 +35,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D1769A01BBC1CE800831491 /* EventsManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsManagerDelegate.h; sourceTree = "<group>"; };
+		6D1769A21BBC1D7A00831491 /* EventsCommunicatorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventsCommunicatorDelegate.h; sourceTree = "<group>"; };
+		6D1769A31BBC1DE000831491 /* EventsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventsManager.h; sourceTree = "<group>"; };
+		6D1769A41BBC1E6B00831491 /* EventsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsManager.m; sourceTree = "<group>"; };
+		6D1769A61BBC1F1200831491 /* EventsCommunicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventsCommunicator.h; sourceTree = "<group>"; };
+		6D1769A71BBC1F5300831491 /* EventBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventBuilder.h; sourceTree = "<group>"; };
+		6D1769A81BBC1F7D00831491 /* EventBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventBuilder.m; sourceTree = "<group>"; };
+		6D1769AA1BBC238F00831491 /* EventsCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsCommunicator.m; sourceTree = "<group>"; };
+		6D1769AC1BBC254B00831491 /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		6D1769AD1BBC256E00831491 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		6D1769AF1BBC27BF00831491 /* EventDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventDetailViewController.h; sourceTree = "<group>"; };
+		6D1769B01BBC283A00831491 /* EventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewController.m; sourceTree = "<group>"; };
+		6D1769B21BBC28FD00831491 /* EventDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventDetailCell.h; sourceTree = "<group>"; };
+		6D1769B31BBC292900831491 /* EventDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailCell.m; sourceTree = "<group>"; };
 		6DFDE8F61BBAE0F40068E4E6 /* PlayaPals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayaPals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFDE8FA1BBAE0F40068E4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DFDE8FB1BBAE0F40068E4E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +115,20 @@
 				6DFDE9091BBAE0F40068E4E6 /* Images.xcassets */,
 				6DFDE90B1BBAE0F40068E4E6 /* LaunchScreen.xib */,
 				6DFDE8F91BBAE0F40068E4E6 /* Supporting Files */,
+				6D1769A01BBC1CE800831491 /* EventsManagerDelegate.h */,
+				6D1769A21BBC1D7A00831491 /* EventsCommunicatorDelegate.h */,
+				6D1769A31BBC1DE000831491 /* EventsManager.h */,
+				6D1769A41BBC1E6B00831491 /* EventsManager.m */,
+				6D1769A61BBC1F1200831491 /* EventsCommunicator.h */,
+				6D1769A71BBC1F5300831491 /* EventBuilder.h */,
+				6D1769A81BBC1F7D00831491 /* EventBuilder.m */,
+				6D1769AA1BBC238F00831491 /* EventsCommunicator.m */,
+				6D1769AC1BBC254B00831491 /* Event.h */,
+				6D1769AD1BBC256E00831491 /* Event.m */,
+				6D1769AF1BBC27BF00831491 /* EventDetailViewController.h */,
+				6D1769B01BBC283A00831491 /* EventDetailViewController.m */,
+				6D1769B21BBC28FD00831491 /* EventDetailCell.h */,
+				6D1769B31BBC292900831491 /* EventDetailCell.m */,
 			);
 			path = PlayaPals;
 			sourceTree = "<group>";
@@ -168,11 +203,12 @@
 		6DFDE8EE1BBAE0F40068E4E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = JennaTauro;
 				TargetAttributes = {
 					6DFDE8F51BBAE0F40068E4E6 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = M94RSAYVS7;
 					};
 					6DFDE9111BBAE0F40068E4E6 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -204,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1769A11BBC1CE800831491 /* EventsManagerDelegate.h in Resources */,
 				6DFDE9081BBAE0F40068E4E6 /* Main.storyboard in Resources */,
 				6DFDE90D1BBAE0F40068E4E6 /* LaunchScreen.xib in Resources */,
 				6DFDE90A1BBAE0F40068E4E6 /* Images.xcassets in Resources */,
@@ -224,9 +261,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1769B11BBC283A00831491 /* EventDetailViewController.m in Sources */,
+				6D1769B41BBC292900831491 /* EventDetailCell.m in Sources */,
 				6DFDE9051BBAE0F40068E4E6 /* SecondViewController.m in Sources */,
+				6D1769AB1BBC238F00831491 /* EventsCommunicator.m in Sources */,
 				6DFDE8FF1BBAE0F40068E4E6 /* AppDelegate.m in Sources */,
 				6DFDE9021BBAE0F40068E4E6 /* FirstViewController.m in Sources */,
+				6D1769AE1BBC256E00831491 /* Event.m in Sources */,
+				6D1769A51BBC1E6B00831491 /* EventsManager.m in Sources */,
+				6D1769A91BBC1F7D00831491 /* EventBuilder.m in Sources */,
 				6DFDE8FC1BBAE0F40068E4E6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +332,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -349,9 +393,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PlayaPals/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jennatauro.JennaTauro.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -359,9 +407,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PlayaPals/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jennatauro.JennaTauro.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -379,6 +431,7 @@
 				);
 				INFOPLIST_FILE = PlayaPalsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jennatauro.JennaTauro.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayaPals.app/PlayaPals";
 			};
@@ -394,6 +447,7 @@
 				);
 				INFOPLIST_FILE = PlayaPalsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jennatauro.JennaTauro.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayaPals.app/PlayaPals";
 			};
@@ -418,6 +472,7 @@
 				6DFDE91E1BBAE0F40068E4E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DFDE91F1BBAE0F40068E4E6 /* Build configuration list for PBXNativeTarget "PlayaPalsTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +481,7 @@
 				6DFDE9211BBAE0F40068E4E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

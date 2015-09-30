@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EventsManagerDelegate.h"
 
-@interface FirstViewController : UIViewController
-
+@interface FirstViewController : UITableViewController<EventsManagerDelegate>
 
 @end
 
