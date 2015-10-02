@@ -13,6 +13,7 @@
 #import "Event.h"
 #import "EventsManager.h"
 #import "EventsCommunicator.h"
+#import "MBProgressHUD.h"
 
 @interface FirstViewController () <EventsManagerDelegate>{
     NSArray *_events;
@@ -31,7 +32,11 @@
     _manager.communicator.delegate = _manager;
     _manager.delegate = self;
     
-    [self startFetchingEvents];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        [self startFetchingEvents];
+    });
+    
 }
 
 - (void)startFetchingEvents
@@ -44,6 +49,7 @@
     _events = events;
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.tableView reloadData];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
     });
 }
 
