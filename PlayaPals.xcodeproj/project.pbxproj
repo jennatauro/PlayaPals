@@ -15,6 +15,7 @@
 		6D1769AE1BBC256E00831491 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1769AD1BBC256E00831491 /* Event.m */; settings = {ASSET_TAGS = (); }; };
 		6D1769B11BBC283A00831491 /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1769B01BBC283A00831491 /* EventDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6D1769B41BBC292900831491 /* EventDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1769B31BBC292900831491 /* EventDetailCell.m */; settings = {ASSET_TAGS = (); }; };
+		6DC0ECA61BC063F7008C8EC7 /* ASDayPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC0ECA51BC063F7008C8EC7 /* ASDayPicker.m */; settings = {ASSET_TAGS = (); }; };
 		6DFDE8FC1BBAE0F40068E4E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFDE8FB1BBAE0F40068E4E6 /* main.m */; };
 		6DFDE8FF1BBAE0F40068E4E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFDE8FE1BBAE0F40068E4E6 /* AppDelegate.m */; };
 		6DFDE9021BBAE0F40068E4E6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFDE9011BBAE0F40068E4E6 /* FirstViewController.m */; };
@@ -52,6 +53,8 @@
 		6D1769B01BBC283A00831491 /* EventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewController.m; sourceTree = "<group>"; };
 		6D1769B21BBC28FD00831491 /* EventDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventDetailCell.h; sourceTree = "<group>"; };
 		6D1769B31BBC292900831491 /* EventDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailCell.m; sourceTree = "<group>"; };
+		6DC0ECA41BC063DD008C8EC7 /* ASDayPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASDayPicker.h; sourceTree = "<group>"; };
+		6DC0ECA51BC063F7008C8EC7 /* ASDayPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDayPicker.m; sourceTree = "<group>"; };
 		6DFDE8F61BBAE0F40068E4E6 /* PlayaPals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayaPals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFDE8FA1BBAE0F40068E4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DFDE8FB1BBAE0F40068E4E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				6D1769B01BBC283A00831491 /* EventDetailViewController.m */,
 				6D1769B21BBC28FD00831491 /* EventDetailCell.h */,
 				6D1769B31BBC292900831491 /* EventDetailCell.m */,
+				6DC0ECA41BC063DD008C8EC7 /* ASDayPicker.h */,
+				6DC0ECA51BC063F7008C8EC7 /* ASDayPicker.m */,
 			);
 			path = PlayaPals;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 				6DFDE9051BBAE0F40068E4E6 /* SecondViewController.m in Sources */,
 				6D1769AB1BBC238F00831491 /* EventsCommunicator.m in Sources */,
 				6DFDE8FF1BBAE0F40068E4E6 /* AppDelegate.m in Sources */,
+				6DC0ECA61BC063F7008C8EC7 /* ASDayPicker.m in Sources */,
 				6DFDE9021BBAE0F40068E4E6 /* FirstViewController.m in Sources */,
 				6D1769AE1BBC256E00831491 /* Event.m in Sources */,
 				6D1769A51BBC1E6B00831491 /* EventsManager.m in Sources */,

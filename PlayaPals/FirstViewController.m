@@ -14,10 +14,16 @@
 #import "EventsManager.h"
 #import "EventsCommunicator.h"
 #import "MBProgressHUD.h"
+#import <KVOController/FBKVOController.h>
+#import "UIView+AutoLayout.h"
+
+static const CGFloat kDayPickerHeight = 65.0f;
 
 @interface FirstViewController () <EventsManagerDelegate>{
     NSArray *_events;
     EventsManager *_manager;
+    NSDate *festivalStartDate;
+    NSDate *festivalEndDate;
 }
 @end
 
@@ -27,16 +33,73 @@
 {
     [super viewDidLoad];
     
+    [self setFestivalDates];
+    
     _manager = [[EventsManager alloc] init];
     _manager.communicator = [[EventsCommunicator alloc] init];
     _manager.communicator.delegate = _manager;
     _manager.delegate = self;
+    
+    self.selectedDay = festivalStartDate;
+    
+    [self layoutTableHeaderViewWithWidth:self.view.bounds.size.width];
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
         [self startFetchingEvents];
     });
     
+}
+
+- (void) setFestivalDates {
+    NSString *startDateString = @"31-Aug-15";
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"dd-MMM-yy";
+    
+    festivalStartDate = [dateFormatter dateFromString:startDateString];
+    
+    NSString *endDateString = @"07-Sep-15";
+    festivalEndDate = [dateFormatter dateFromString:endDateString];
+}
+
+- (void) layoutTableHeaderViewWithWidth:(CGFloat)width {
+    NSParameterAssert(self.tableView != nil);
+    // Configure header view
+    UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, 0)];
+    tableHeaderView.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    [self setupDayPicker];
+    [tableHeaderView addSubview:self.dayPicker];
+    
+    _dayPickerHeight = [self.dayPicker autoSetDimension:ALDimensionHeight toSize:kDayPickerHeight];
+    [self.dayPicker autoSetDimension:ALDimensionWidth toSize:width];
+    [self.dayPicker autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:tableHeaderView withOffset:8];
+    
+    NSLayoutConstraint *headerWidthConstraint = [NSLayoutConstraint
+                                                 constraintWithItem:tableHeaderView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual
+                                                 toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0f constant:width
+                                                 ];
+    [tableHeaderView addConstraint:headerWidthConstraint];
+    CGFloat height = [tableHeaderView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    [tableHeaderView removeConstraint:headerWidthConstraint];
+    
+    tableHeaderView.frame = CGRectMake(0, 0, width, height);
+    [tableHeaderView autoSetDimension:ALDimensionWidth toSize:width];
+    self.tableViewHeaderHeight = [tableHeaderView autoSetDimension:ALDimensionHeight toSize:height];
+    
+    self.tableView.tableHeaderView = tableHeaderView;
+}
+
+- (void)setupDayPicker {
+    self.dayPicker = [[ASDayPicker alloc] initForAutoLayout];
+    [self.dayPicker setStartDate:festivalStartDate endDate:festivalEndDate];
+    [self.dayPicker setWeekdayTitles:[ASDayPicker weekdayTitlesWithLocaleIdentifier:nil length:3 uppercase:YES]];
+    self.dayPicker.selectedDate = self.selectedDay;
+    [self.dayPicker setSelectedDateBackgroundImage:[UIImage imageNamed:@"selection"]];
+    [self.KVOController observe:self.dayPicker keyPath:NSStringFromSelector(@selector(selectedDate)) options:NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew block:^(id observer, ASDayPicker *dayPicker, NSDictionary *change) {
+        NSDate *newDate = dayPicker.selectedDate;
+        self.selectedDay = newDate;
+    }];
 }
 
 - (void)startFetchingEvents
