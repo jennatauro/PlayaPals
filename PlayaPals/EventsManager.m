@@ -11,9 +11,9 @@
 #import "EventsCommunicator.h"
 
 @implementation EventsManager
-- (void)fetchEvents
+- (void)fetchEvents:(NSDate*) date
 {
-    [self.communicator searchEvents];
+    [self.communicator searchEvents:date];
 }
 
 #pragma mark - EventsCommunicatorDelegate

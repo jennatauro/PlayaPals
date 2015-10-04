@@ -44,11 +44,6 @@ static const CGFloat kDayPickerHeight = 65.0f;
     
     [self layoutTableHeaderViewWithWidth:self.view.bounds.size.width];
     
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-        [self startFetchingEvents];
-    });
-    
 }
 
 - (void) setFestivalDates {
@@ -104,12 +99,17 @@ static const CGFloat kDayPickerHeight = 65.0f;
     [self.KVOController observe:self.dayPicker keyPath:NSStringFromSelector(@selector(selectedDate)) options:NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew block:^(id observer, ASDayPicker *dayPicker, NSDictionary *change) {
         NSDate *newDate = dayPicker.selectedDate;
         self.selectedDay = newDate;
+        
+        [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+            [self startFetchingEvents];
+        });
     }];
 }
 
 - (void)startFetchingEvents
 {
-    [_manager fetchEvents];
+    [_manager fetchEvents:_selectedDay];
 }
 
 - (void)didReceiveEvents:(NSArray *)events

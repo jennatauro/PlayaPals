@@ -17,6 +17,6 @@
 @property (strong, nonatomic) EventsCommunicator *communicator;
 @property (weak, nonatomic) id<EventsManagerDelegate> delegate;
 
--(void)fetchEvents;
+-(void)fetchEvents:(NSDate*) date;
 
 @end

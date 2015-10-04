@@ -13,6 +13,6 @@
 @interface EventsCommunicator : NSObject
 @property (weak, nonatomic) id<EventsCommunicatorDelegate> delegate;
 
--(void) searchEvents;
+-(void) searchEvents:(NSDate*) date;
 
 @end
