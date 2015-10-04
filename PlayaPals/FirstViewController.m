@@ -68,12 +68,17 @@ static const CGFloat kDayPickerHeight = 65.0f;
     UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, 0)];
     tableHeaderView.translatesAutoresizingMaskIntoConstraints = NO;
     
+    UIView *emptyContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, 44)];
+    
     [self setupDayPicker];
     [tableHeaderView addSubview:self.dayPicker];
+    [tableHeaderView addSubview:emptyContainer];
     
+    [emptyContainer autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:tableHeaderView];
     _dayPickerHeight = [self.dayPicker autoSetDimension:ALDimensionHeight toSize:kDayPickerHeight];
     [self.dayPicker autoSetDimension:ALDimensionWidth toSize:width];
     [self.dayPicker autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:tableHeaderView withOffset:8];
+    [self.dayPicker autoPinEdge:ALEdgeBottom toEdge:ALEdgeTop ofView:emptyContainer];
     
     NSLayoutConstraint *headerWidthConstraint = [NSLayoutConstraint
                                                  constraintWithItem:tableHeaderView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual
